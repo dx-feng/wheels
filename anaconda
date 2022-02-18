@@ -42,3 +42,6 @@ conda list
 conda install package_name
 conda env list 或 conda info -e
 conda update conda
+# share
+conda env export --file python36_env.yml
+conda env create -f /home/chb/code/python36_env.yml
