@@ -1,3 +1,4 @@
+topic origin
 # reduce the original source
 # the next command is used to create the .condarc file on windows
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --set show_channel_urls yes
@@ -20,3 +21,24 @@ custom_channels:
   menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
   pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
   simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+
+topic evn
+# create evn
+conda create -n env_name numpy matplotlib python=2.7
+conda create -n env_name default package
+# activate evn
+Linux:  source activate your_env_name(虚拟环境名称)
+Windows: activate your_env_name(虚拟环境名称)
+# logout evn
+Linux:  source deactivate your_env_name(虚拟环境名称)
+Windows:deactivate env_name，也可以使用`activate root`切回root环境
+# delete evn
+conda remove -n your_env_name(虚拟环境名称) --all
+# remove package
+使用命令conda remove --name $your_env_name  $package_name（包名） 即可。
+
+conda常用命令
+conda list
+conda install package_name
+conda env list 或 conda info -e
+conda update conda
