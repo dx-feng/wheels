@@ -7,7 +7,8 @@ anaconda\Library\mingw-w64\bin
 topic origin
 # reduce the original source
 # the next command is used to create the .condarc file on windows
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/conda config --set show_channel_urls yes
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
 vim ~/.condarc  (on linux)
 #Tsinghua university:
 channels:
