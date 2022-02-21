@@ -1,3 +1,9 @@
+
+anaconda
+anaconda\Scripts\
+anaconda\Library\bin
+anaconda\Library\mingw-w64\bin
+
 topic origin
 # reduce the original source
 # the next command is used to create the .condarc file on windows
